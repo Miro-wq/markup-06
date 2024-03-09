@@ -300,4 +300,97 @@ footer a {
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
 }
+
+/* -------------------------------------------subscribe-field----------------------------- */
+.submit-container {
+  box-sizing: border-box;
+  width: 453px;
+  height: 80px;
+  margin-top: 100px;
+  margin-left: 125px;
+}
+
+.subscribe {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+}
+
+.email-box {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--accent-color-text);
+}
+
+::placeholder {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.submit-container input {
+  background: var(--accent-color-text);
+  border: none;
+  width: 243px;
+  color: var(--primary-color);
+}
+
+.submit-container button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  padding: 8px 24px 8px 24px;
+  cursor: pointer;
+  background: var(--accent-color-iris);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  gap: 16px;
+}
+
+.submit-container button:hover {
+  background-color: var(--button-color-filters);
+}
+
+.submit-container button:active {
+  background-color: var(--accent-color-iris);
+}
+
+.newsletter-form-container {
+  width: 453px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.send-icon {
+  align-items: center;
+  justify-content: center;
+}
+.send-icon .send {
+  width: 24px;
+  height: 24px;
+  fill: var(--primary-color);
+}
 /*--------------------------end----------------------------*/

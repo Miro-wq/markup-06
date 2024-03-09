@@ -68,6 +68,19 @@
         </div>
         <div class="modal is-hidden" data-modal>
           <div class="modal-content">
+            <form name="signup_form" autocomplete="on" novalidate>
+              <label>
+                Email
+                <input type="email" name="email" />
+              </label>
+
+              <label>
+                Password
+                <input type="password" name="password" />
+              </label>
+
+              <button type="submit">Submit</button>
+            </form>
             <button class="close-btn" data-modal-close>&times;</button>
             Continut modal
           </div>
@@ -493,6 +506,28 @@
                   href="./images/icons.svg/symbol-defs.svg#icon-linkedin"
                 ></use></svg
             ></a>
+          </div>
+        </div>
+        <!--subscribe-filed-->
+        <div class="submit-container">
+          <span class="subscribe">subscribe</span>
+          <div class="newsletter-form-container">
+            <div class="email-box">
+              <form name="signup_form" autocomplete="on" novalidate></form>
+              <label>
+                <input type="email" name="email" placeholder="E-mail" />
+              </label>
+            </div>
+            <div class="send-icon">
+              <button type="submit">
+                <svg class="send">
+                  <use
+                    href="./images/icons.svg/symbol-defs.svg#icon-frame"
+                  ></use>
+                </svg>
+                subscribe
+              </button>
+            </div>
           </div>
         </div>
       </div>
