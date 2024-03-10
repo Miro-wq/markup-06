@@ -251,10 +251,14 @@ body {
   transition: var(--transitions);
 }
 
-.hero button:focus,
+/* .hero button:focus, */
 .hero button:hover {
   background-color: var(--button-color-filters);
-  transform: scale(1.2);
+}
+
+.hero button:active {
+  background-color: var(--accent-color-iris);
+  transition: var(--transitions);
 }
 /*---------------------------------------------------------*/
 
@@ -785,5 +789,156 @@ footer a {
   cursor: pointer;
   transform: scale(1.5);
 }
-/* modal style  end */
+/* ------------experiment continut modal---------- */
+.modal-content h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--accent-color-text);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  color: #2e2f42;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  gap: 16px;
+}
+
+.form-group .name,
+.form-group .phone,
+.form-group .email,
+.form-group .comment {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--grey-new-color);
+  margin-bottom: 4px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 316px;
+  height: 30px;
+  margin-left: 10px;
+  border: 1px transparent;
+}
+
+.vector-field {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  box-sizing: content-box;
+  width: 360px;
+  height: 35px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 4px;
+}
+
+.vector-field:hover {
+  border: 1px solid var(--accent-color-iris);
+}
+
+.vector-field:hover .modal-icon {
+  color: var(--accent-color-iris);
+}
+
+/* .phone-number,
+.email-input {
+  border: 1px solid var(--navy-blue-modal);
+  height: 40px;
+  border-radius: 4px;
+} */
+
+/* .phone-number:focus,
+.email-input:focus {
+  outline-color: var(--accent-color-iris);
+} */
+
+.message {
+  height: 120px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  resize: none;
+  border: 1px solid var(--navy-blue-modal);
+}
+
+.message:focus {
+  outline-color: var(--accent-color-iris);
+}
+
+.message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--navy-blue-modal);
+  padding: 8px 0px 0px 16px;
+}
+
+.check-text {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--grey-new-color);
+}
+
+.privacy {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+}
+
+.form-label span {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.send-btn {
+  background-color: var(--accent-color-iris);
+  color: var(--primary-color);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-top: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.modal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+/*------------------- modal style  end------------ */
 /*------------------------end---------------------------------*/

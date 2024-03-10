@@ -67,22 +67,51 @@
           </button>
         </div>
         <div class="modal is-hidden" data-modal>
+          <!--continut modal si vectori-->
           <div class="modal-content">
-            <form name="signup_form" autocomplete="on" novalidate>
-              <label>
-                Email
-                <input type="email" name="email" />
-              </label>
-
-              <label>
-                Password
-                <input type="password" name="password" />
-              </label>
-
-              <button type="submit">Submit</button>
-            </form>
             <button class="close-btn" data-modal-close>&times;</button>
-            Continut modal
+            <h3>Leave your contacts and we will call you back</h3>
+            <div class="form-group">
+              <div class="input-fields">
+                <label class="name">Name</label>
+                <div class="vector-field">
+                  <input type="text" class="box" id="name" autofocus />
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg/modal.svg#icon-men"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="input-fields">
+                <label class="phone">Phone</label>
+                <div class="vector-field">
+                  <input type="tel" class="box" />
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg/modal.svg#icon-tel"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="input-fields">
+                <label class="email">Email</label>
+                <div class="vector-field">
+                  <input type="email" class="box" />
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg/modal.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="input-fields">
+                <label class="comment">Comment</label>
+                <textarea class="message" placeholder="Text input"></textarea>
+              </div>
+            </div>
+            <div class="check-text">
+              <input type="checkbox" class="privacy" />
+              <label class="form-label" for="checkbox"
+                >I accept the terms and conditions of the
+                <span>Privacy Policy</span>
+              </label>
+            </div>
+            <button type="submit" class="send-btn">Send</button>
           </div>
         </div>
       </section>
