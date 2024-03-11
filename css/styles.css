@@ -673,6 +673,11 @@ footer a {
   background-color: var(--accent-color-text);
 }
 
+.email-box:focus-within {
+  border: 2px solid var(--accent-color-iris);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 ::placeholder {
   font-size: 12px;
   letter-spacing: 0.04em;
@@ -846,25 +851,13 @@ footer a {
   border-radius: 4px;
 }
 
-.vector-field:hover {
+.vector-field:focus-within {
   border: 1px solid var(--accent-color-iris);
 }
 
-.vector-field:hover .modal-icon {
+.vector-field:focus-within .modal-icon {
   color: var(--accent-color-iris);
 }
-
-/* .phone-number,
-.email-input {
-  border: 1px solid var(--navy-blue-modal);
-  height: 40px;
-  border-radius: 4px;
-} */
-
-/* .phone-number:focus,
-.email-input:focus {
-  outline-color: var(--accent-color-iris);
-} */
 
 .message {
   height: 120px;
@@ -874,8 +867,8 @@ footer a {
   border: 1px solid var(--navy-blue-modal);
 }
 
-.message:focus {
-  outline-color: var(--accent-color-iris);
+.message:focus-within {
+  border: 1px solid var(--accent-color-iris);
 }
 
 .message::placeholder {
@@ -886,20 +879,29 @@ footer a {
   color: var(--navy-blue-modal);
   padding: 8px 0px 0px 16px;
 }
-
+/* ---------------------------------------test checkbox */
 .check-text {
   display: flex;
   align-items: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 117%;
-  letter-spacing: 0.04em;
-  color: var(--grey-new-color);
+}
+.checkbox-icon {
+  color: white;
+  fill: white;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.checkbox-icon:active {
+  color: var(--navy-blue-modal);
 }
 
 .privacy {
   margin-right: 8px;
   cursor: pointer;
+  display: none;
 }
 
 .form-label {
@@ -907,6 +909,8 @@ footer a {
   font-size: 12px;
   line-height: 117%;
   letter-spacing: 0.04em;
+  color: var(--grey-new-color);
+  margin-left: 8px;
 }
 
 .form-label span {
@@ -914,7 +918,7 @@ footer a {
   text-decoration: underline;
   cursor: pointer;
 }
-
+/* ---------------------------------------------------- */
 .send-btn {
   background-color: var(--accent-color-iris);
   color: var(--primary-color);
@@ -937,8 +941,9 @@ footer a {
 
 input:focus,
 select:focus,
-button:focus {
+button:focus,
+textarea:focus {
   outline: none;
 }
-/*------------------- modal style  end------------ */
+/*------------------- modal style end------------ */
 /*------------------------end---------------------------------*/

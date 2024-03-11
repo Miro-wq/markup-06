@@ -75,7 +75,7 @@
               <div class="input-fields">
                 <label class="name">Name</label>
                 <div class="vector-field">
-                  <input type="text" class="box" id="name" autofocus />
+                  <input type="text" class="box" name="username" />
                   <svg class="modal-icon">
                     <use href="./images/icons.svg/modal.svg#icon-men"></use>
                   </svg>
@@ -84,7 +84,7 @@
               <div class="input-fields">
                 <label class="phone">Phone</label>
                 <div class="vector-field">
-                  <input type="tel" class="box" />
+                  <input type="tel" class="box" name="phone-number" />
                   <svg class="modal-icon">
                     <use href="./images/icons.svg/modal.svg#icon-tel"></use>
                   </svg>
@@ -93,7 +93,7 @@
               <div class="input-fields">
                 <label class="email">Email</label>
                 <div class="vector-field">
-                  <input type="email" class="box" />
+                  <input type="email" class="box" name="email" />
                   <svg class="modal-icon">
                     <use href="./images/icons.svg/modal.svg#icon-mail"></use>
                   </svg>
@@ -101,14 +101,33 @@
               </div>
               <div class="input-fields">
                 <label class="comment">Comment</label>
-                <textarea class="message" placeholder="Text input"></textarea>
+                <textarea
+                  name="feedback"
+                  class="message"
+                  placeholder="Text input"
+                ></textarea>
               </div>
             </div>
             <div class="check-text">
-              <input type="checkbox" class="privacy" />
+              <input
+                type="checkbox"
+                class="privacy"
+                value="checkbox"
+                id="checkbox"
+                name="privacy"
+                checked
+              />
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg/checkbox.svg#icon-checkbox"></use>
+              </svg>
               <label class="form-label" for="checkbox"
                 >I accept the terms and conditions of the
-                <span>Privacy Policy</span>
+                <a
+                  href="https://en.wikipedia.org/wiki/Privacy_policy"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  ><span>Privacy Policy</span></a
+                >
               </label>
             </div>
             <button type="submit" class="send-btn">Send</button>
