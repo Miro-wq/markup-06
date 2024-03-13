@@ -795,7 +795,7 @@ footer a {
   cursor: pointer;
   transform: scale(1.5);
 }
-/* ------------experiment continut modal---------- */
+/* ------------continut modal---------- */
 .modal-content h3 {
   font-weight: 500;
   font-size: 16px;
@@ -880,14 +880,17 @@ footer a {
   color: var(--navy-blue-modal);
   padding: 8px 0px 0px 16px;
 }
-/* ---------------------------------------test checkbox */
+
+/* test checkbox */
 input:checked + svg.checkbox-icon {
   color: var(--navy-blue-modal);
 }
+
 .check-text {
   display: flex;
   align-items: center;
 }
+
 .checkbox-icon {
   fill: white;
   width: 16px;
@@ -918,7 +921,8 @@ input:checked + svg.checkbox-icon {
   text-decoration: underline;
   cursor: pointer;
 }
-/* ---------------------------------------------------- */
+/* ------------------check-box end---------------------------------- */
+
 .send-btn {
   background-color: var(--accent-color-iris);
   color: var(--primary-color);
