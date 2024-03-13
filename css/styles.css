@@ -714,6 +714,7 @@ footer a {
 
 .submit-container button:hover {
   background-color: var(--button-color-filters);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit-container button:active {
@@ -880,12 +881,14 @@ footer a {
   padding: 8px 0px 0px 16px;
 }
 /* ---------------------------------------test checkbox */
+input:checked + svg.checkbox-icon {
+  color: var(--navy-blue-modal);
+}
 .check-text {
   display: flex;
   align-items: center;
 }
 .checkbox-icon {
-  color: white;
   fill: white;
   width: 16px;
   height: 16px;
@@ -894,14 +897,10 @@ footer a {
   cursor: pointer;
 }
 
-.checkbox-icon:active {
-  color: var(--navy-blue-modal);
-}
-
-.privacy {
-  margin-right: 8px;
+.visually-hidden {
   cursor: pointer;
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .form-label {
@@ -911,10 +910,11 @@ footer a {
   letter-spacing: 0.04em;
   color: var(--grey-new-color);
   margin-left: 8px;
+  cursor: pointer;
 }
 
 .form-label span {
-  color: blue;
+  color: var(--accent-color-iris);
   text-decoration: underline;
   cursor: pointer;
 }
