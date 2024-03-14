@@ -397,9 +397,6 @@ footer a {
 
 /* -------------------------------------subscribe-field---------------------------- */
 .submit-container {
-  box-sizing: border-box;
-  width: 453px;
-  height: 80px;
   margin-top: 100px;
   margin-left: 125px;
 }
@@ -414,21 +411,8 @@ footer a {
 }
 
 .email-box {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  border: 1px solid white;
-  align-items: center;
-  justify-content: center;
   display: flex;
-  background-color: var(--accent-color-text);
-}
-
-.email-box:focus-within {
-  border: 2px solid var(--accent-color-iris);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
 }
 
 ::placeholder {
@@ -443,6 +427,12 @@ footer a {
   border: none;
   width: 243px;
   color: var(--primary-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 16px 24px 0px 0px;
+  padding-left: 16px;
 }
 
 .submit-container button {
@@ -451,6 +441,7 @@ footer a {
   align-items: center;
   justify-content: center;
   width: 165px;
+  height: 40px;
   padding: 8px 24px 8px 24px;
   cursor: pointer;
   background: var(--accent-color-iris);
@@ -459,12 +450,17 @@ footer a {
   color: var(--primary-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
   gap: 16px;
+  margin-top: 16px;
 }
 
+.submit-container input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color-iris);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .submit-container button:hover {
   background-color: var(--button-color-filters);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -474,28 +470,10 @@ footer a {
   background-color: var(--accent-color-iris);
 }
 
-.newsletter-form-container {
-  width: 453px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 16px;
-}
-
-.send-icon {
-  align-items: center;
-  justify-content: center;
-}
-.send-icon .send {
+.send {
   width: 24px;
   height: 24px;
   fill: var(--primary-color);
-}
-
-input {
-  outline: none;
 }
 /* ---------------------------------------------------- */
 
